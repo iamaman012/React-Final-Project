@@ -6,13 +6,13 @@ import right_img from "../assets/Hero_Right_Image_Default-2022.webp";
 const Landing = () => {
   return (
     <>
-      <div className="main-component flex justify-between pt-20 min-h-screen">
+      <div className="main-component flex justify-between pt-24 min-h-screen">
         <div className="left-image flex">
-          <img src={left_img} alt="left-image" />
+          <img  className="max-md:h-6 max-md:w-8"src={left_img} alt="left-image" />
         </div>
         <div className="main-content flex-col text-center">
-          <h2 className="text-6xl">Make it your year</h2>
-          <h2 className="text-6xl">with Headspace</h2>
+          <h2 className="text-6xl font-semibold">Make it your year</h2>
+          <h2 className="text-6xl font-semibold">with Headspace</h2>
           <div className="flex bg-yellow-400 rounded-xl px-28 py-4 mt-10 text-center">
             <div className="flex-col">
               <h1 className="text-2xl">Free for 14 days, then 1499/year</h1>

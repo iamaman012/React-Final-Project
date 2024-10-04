@@ -6,7 +6,7 @@ const DropdownMenu = () => {
   return (
     <>
       {/* Dropdown Container */}
-      <ul className="absolute w-full left-0 top-20 h-auto z-10">
+      <ul className="absolute w-full left-0 top-32 h-auto z-10">
         <div className="flex px-16 pb-8 bg-white  border-gray-200  border-t-2 border-b-4 rounded-b-3xl justify-between">
           <div className="left-dropdown flex gap-32 mt-10">
                 <div className="sec-1">
