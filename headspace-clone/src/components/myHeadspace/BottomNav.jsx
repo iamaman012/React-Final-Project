@@ -3,14 +3,13 @@ import { FaRegCircle } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
 export default function BottomNav() {
-  const [selected, setSelected] = useState(null); // State to track selected button
+  const [selected, setSelected] = useState(null);
   const navigate = useNavigate();
 
   // Handle click event
   const handleClick = (action) => {
     setSelected(action); // Set the selected button
 
-    // Navigate to the corresponding route
     if (action === "meditate") {
       navigate("/modes/meditate");
     } else if (action === "focus") {

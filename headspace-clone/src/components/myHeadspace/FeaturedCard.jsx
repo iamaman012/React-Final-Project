@@ -1,12 +1,13 @@
 import React from "react";
 import { IoIosLock } from "react-icons/io";
 import { RiArrowRightSLine } from "react-icons/ri";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 
 export default function FeaturedCard() {
     const location = useLocation();
     const lastPart = location.pathname.split("/").pop();
+    const navigate =  useNavigate();
     
   return (
     <div>
@@ -22,7 +23,7 @@ export default function FeaturedCard() {
         </div>
         <div className="feature-arrow-cont">
           <div className="featured-txt-cont">
-            <div className="feature-txt-cont">
+            <div className="feature-txt-cont" onClick={()=>navigate("/modes/meditate/music")}>
               <IoIosLock />
               <p className="feature-txt">{lastPart==="meditate"?"Basic":"Breathig through exams"}</p>
             </div>

@@ -6,7 +6,7 @@ import right_img from "../assets/Hero_Right_Image_Default-2022.webp";
 const Landing = () => {
   return (
     <>
-      <div className="main-component flex justify-between pt-24 min-h-screen">
+      <div className="main-component flex justify-between pt-24 min-h-screen max-lg:flex-col max-lg:justify-center max-lg:items-center">
         <div className="left-image flex">
           <img  className="max-md:h-6 max-md:w-8"src={left_img} alt="left-image" />
         </div>
